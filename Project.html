@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>g.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="g-top">
+  <div class="g-bar g-black g-card">
+    <a class="g-bar-item g-button g-padding-large g-hide-medium g-hide-large g-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="g-bar-item g-button g-padding-large">HOME</a>
+    <a href="#band" class="g-bar-item g-button g-padding-large g-hide-small">BAND</a>
+    <a href="#tour" class="g-bar-item g-button g-padding-large g-hide-small">TOUR</a>
+    <a href="#contact" class="g-bar-item g-button g-padding-large g-hide-small">CONTACT</a>
+    <div class="g-dropdown-hover g-hide-small">
+      <button class="g-padding-large g-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="g-dropdown-content g-bar-block g-card-4">
+        <a href="#" class="g-bar-item g-button">Merchandise</a>
+        <a href="#" class="g-bar-item g-button">Extras</a>
+        <a href="#" class="g-bar-item g-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="g-padding-large g-hover-red g-hide-small g-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="g-bar-block g-black g-hide g-hide-large g-hide-medium g-top" style="margin-top:46px">
+  <a href="#band" class="g-bar-item g-button g-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="g-bar-item g-button g-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="g-bar-item g-button g-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="g-bar-item g-button g-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="g-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides g-display-container g-center">
+    <img src="./1.jpg" style="width:100%">
+    <div class="g-display-bottommiddle g-container g-text-white g-padding-32 g-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides g-display-container g-center">
+    <img src="./2.jpg" style="width:100%">
+    <div class="g-display-bottommiddle g-container g-text-white g-padding-32 g-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides g-display-container g-center">
+    <img src="./3.jpg" style="width:100%">
+    <div class="g-display-bottommiddle g-container g-text-white g-padding-32 g-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="g-container g-content g-center g-padding-64" style="max-width:800px" id="band">
+    <h2 class="g-wide">THE BAND</h2>
+    <p class="g-opacity"><i>We love music</i></p>
+    <p class="g-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="g-row g-padding-32">
+      <div class="g-third">
+        <p>Name</p>
+        <img src="./name.jpg" class="g-round g-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="g-third">
+        <p>Name</p>
+        <img src="./name.jpg" class="g-round g-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="g-third">
+        <p>Name</p>
+        <img src="./name.jpg" class="g-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="g-black" id="tour">
+    <div class="g-container g-content g-padding-64" style="max-width:800px">
+      <h2 class="g-wide g-center">TOUR DATES</h2>
+      <p class="g-opacity g-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="g-ul g-border g-white g-text-grey">
+        <li class="g-padding">September <span class="g-tag g-red g-margin-left">Sold out</span></li>
+        <li class="g-padding">October <span class="g-tag g-red g-margin-left">Sold out</span></li>
+        <li class="g-padding">November <span class="g-badge g-right g-margin-right">3</span></li>
+      </ul>
+
+      <div class="g-row-padding g-padding-32" style="margin:0 -16px">
+        <div class="g-third g-margin-bottom">
+          <img src="./place1.jpg" alt="New York" style="width:100%" class="g-hover-opacity">
+          <div class="g-container g-white">
+            <p><b>New York</b></p>
+            <p class="g-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="g-button g-black g-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="g-third g-margin-bottom">
+          <img src="./place2.jpg" alt="Paris" style="width:100%" class="g-hover-opacity">
+          <div class="g-container g-white">
+            <p><b>Paris</b></p>
+            <p class="g-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="g-button g-black g-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="g-third g-margin-bottom">
+          <img src="./place3.jpg" alt="San Francisco" style="width:100%" class="g-hover-opacity">
+          <div class="g-container g-white">
+            <p><b>San Francisco</b></p>
+            <p class="g-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="g-button g-black g-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="g-modal">
+    <div class="g-modal-content g-animate-top g-card-4">
+      <header class="g-container g-teal g-center g-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="g-button g-teal g-xlarge g-display-topright">&times;</span>
+        <h2 class="g-wide"><i class="fa fa-suitcase g-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="g-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="g-input g-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="g-input g-border" type="text" placeholder="Enter email">
+        <button class="g-button g-block g-teal g-padding-16 g-section g-right">PAY <i class="fa fa-check"></i></button>
+        <button class="g-button g-red g-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="g-right">Need <a href="#" class="g-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="g-container g-content g-padding-64" style="max-width:800px" id="contact">
+    <h2 class="g-wide g-center">CONTACT</h2>
+    <p class="g-opacity g-center"><i>Fan? Drop a note!</i></p>
+    <div class="g-row g-padding-32">
+      <div class="g-col m6 g-large g-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="g-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="g-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="g-half">
+              <input class="g-input g-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="g-half">
+              <input class="g-input g-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="g-input g-border" type="text" placeholder="Message" required name="Message">
+          <button class="g-button g-black g-section g-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="./end.jpg" class="g-image g-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="g-container g-padding-64 g-center g-opacity g-light-grey g-xlarge">
+  <i class="fa fa-facebook-official g-hover-opacity"></i>
+  <i class="fa fa-instagram g-hover-opacity"></i>
+  <i class="fa fa-snapchat g-hover-opacity"></i>
+  <i class="fa fa-pinterest-p g-hover-opacity"></i>
+  <i class="fa fa-twitter g-hover-opacity"></i>
+  <i class="fa fa-linkedin g-hover-opacity"></i>
+  <p class="g-medium">Powered by <a href="https://www.gschools.com/gcss/default.asp" target="_blank">g.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("g-show") == -1) {
+    x.className += " g-show";
+  } else { 
+    x.className = x.className.replace(" g-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
